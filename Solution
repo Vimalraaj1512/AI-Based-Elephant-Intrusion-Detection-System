@@ -1,0 +1,13 @@
+Our Solution
+
+TEAM SENTINEL is an automated AI-based early warning system that continuously monitors forest boundary areas using a camera and machine learning model.
+
+When an elephant is detected:
+
+>> SMS alert is sent to registered users through a GSM module
+
+>> A buzzer activates as a local warning system
+
+>> An IR sensor checks for nearby human presence to improve safety
+
+The system operates in real time and does not require manual monitoring.
