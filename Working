@@ -1,0 +1,74 @@
+WORKING OF FULL SYSTEM (Jetson + LoRaWAN + Sensors)
+Step-by-Step Working
+Monitoring
+
+Each node includes:
+
+Jetson Nano (AI processor)
+
+Thermal camera
+
+RGB camera
+
+Acoustic sensor (sound detection)
+
+PIR sensor (motion detection)
+
+The system continuously monitors forest edges.
+
+Smart Detection
+
+Instead of running AI always:
+
+PIR + Acoustic sensors wake up the system.
+
+Then:
+
+Thermal camera detects heat signature
+
+AI model confirms elephant
+
+This saves power — very important for solar systems.
+
+Local Decision Making
+
+Jetson Nano processes:
+
+Image data
+
+Thermal heat pattern
+
+Sound frequency
+
+If elephant confirmed:
+
+Local buzzer / light deterrent activates.
+
+Long-Range Communication (LoRaWAN)
+
+Node sends alert using LoRaWAN.
+
+Signal travels:
+
+Node → LoRa Gateway → Forest Control Center
+
+Advantages:
+
+Works 5–15 km range
+
+No mobile network required
+
+Ultra-low power
+
+Solar Power Working
+
+Each unit uses:
+
+100W Solar panel
+
+LiFePO4 battery
+
+Daytime → charging
+Nighttime → battery supply
+
+System runs fully autonomous.
