@@ -1,0 +1,19 @@
+| Component           | Approx Cost (₹) |
+| ------------------- | --------------- |
+| Jetson Nano         | 20,000 – 30,000 |
+| Thermal Camera      | 12,000 – 25,000 |
+| RGB Camera          | 1,500           |
+| LoRa Module         | 450 – 600       |
+| Acoustic Sensor     | 800             |
+| PIR Sensor          | 150             |
+| IP65 Enclosure      | 2,000           |
+| Mount Structure     | 1,500           |
+| Solar Panel 100W    | 20,000+         |
+| LiFePO4 Battery     | 5,000 – 6,000   |
+| Wiring + Controller | 2,000           |
+
+Estimated Total Per Node
+
+₹65,000 – ₹90,000
+
+(This is realistic for AI forest monitoring hardware.)
