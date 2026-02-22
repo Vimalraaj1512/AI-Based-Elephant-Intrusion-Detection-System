@@ -1,3 +1,18 @@
+Architecture Overview (Professional)
+
+Each Node Contains:
+
+Jetson Nano
+Thermal Camera
+RGB Camera
+Acoustic Sensor
+PIR Sensor
+LoRa Module
+Solar Power Unit
+
+Nodes send alerts → LoRa Gateway → Forest Control Center.
+
+
 | Component           | Approx Cost (₹) |
 | ------------------- | --------------- |
 | Jetson Nano         | 20,000 – 30,000 |
