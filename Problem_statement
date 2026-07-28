@@ -1,15 +1,7 @@
-Problem Statement
+# Problem Statement
 
-In many rural and forest-border regions, elephants enter farms and villages unexpectedly while searching for food or water. Farmers often receive no warning, which results in:
+Human–elephant conflict is a major challenge in regions where forests border agricultural land and villages. Elephants frequently enter farms in search of food and water, leading to crop destruction, property damage, economic losses, and risks to human life. Traditional monitoring methods such as manual patrolling, electric fencing, and watchtowers are expensive, labor-intensive, and often fail to provide timely warnings.
 
-Crop destruction
+Existing surveillance systems typically depend on continuous video processing or mobile network connectivity, resulting in high power consumption, increased operational costs, and reduced effectiveness in remote forest areas with limited infrastructure. These limitations make it difficult to deploy scalable and reliable monitoring solutions.
 
-Property damage
-
-Economic loss
-
-Human safety risks
-
-Harm to elephants during conflicts
-
-Traditional methods like barriers or harmful deterrents are not ethical or effective. This project proposes a smart technological solution that promotes coexistence instead of conflict.
+To address these challenges, an AI-Based Elephant Intrusion Detection System is proposed. The system uses edge AI for real-time elephant detection, PIR sensors for motion-based activation, and LoRaWAN for long-range communication without relying on cellular networks. Solar-powered operation enables continuous monitoring in remote locations while reducing maintenance costs. The objective is to provide early detection and instant alerts, helping forest authorities and nearby communities prevent human–elephant conflicts and minimize damage.
