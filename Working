@@ -1,74 +1,130 @@
-WORKING OF FULL SYSTEM (Jetson + LoRaWAN + Sensors)
-Step-by-Step Working
-Monitoring
+Working of the Full System (AI-Based Elephant Intrusion Detection System)
+Step 1: Continuous Forest Monitoring
 
-Each node includes:
+Each monitoring unit is installed along forest boundaries or near villages. The unit consists of:
 
-Jetson Nano (AI processor)
+Jetson Nano (AI Processing Unit)
+RGB Camera
+PIR Motion Sensor
+Buzzer
+LoRaWAN Module
+Solar Panel with Battery Backup
 
-Thermal camera
+The system continuously monitors the surrounding area for any movement.
 
-RGB camera
+Step 2: Motion Detection
 
-Acoustic sensor (sound detection)
+The PIR sensor continuously detects infrared radiation emitted by moving objects.
 
-PIR sensor (motion detection)
+If no movement is detected, the system remains in low-power mode.
+When motion is detected, the camera and AI module are activated.
 
-The system continuously monitors forest edges.
+This reduces unnecessary power consumption and increases the system's efficiency.
 
-Smart Detection
+Step 3: Image Capture
 
-Instead of running AI always:
+Once activated, the RGB camera captures multiple images or a short video of the moving object.
 
-PIR + Acoustic sensors wake up the system.
+The captured data is immediately sent to the Jetson Nano for processing.
 
-Then:
+Step 4: AI-Based Elephant Detection
 
-Thermal camera detects heat signature
+The Jetson Nano runs a trained deep learning model (such as YOLO) to identify the detected object.
 
-AI model confirms elephant
+The AI model classifies whether the object is:
 
-This saves power — very important for solar systems.
+Elephant
+Human
+Vehicle
+Other Animal
 
-Local Decision Making
+If the detected object is not an elephant, the system returns to monitoring mode.
 
-Jetson Nano processes:
+Step 5: Confidence Verification
 
-Image data
+To reduce false alarms, the AI verifies the detection confidence.
 
-Thermal heat pattern
+If confidence ≥ 80%, the object is confirmed as an elephant.
+If confidence is below the threshold, the detection is ignored.
 
-Sound frequency
+This improves system accuracy and reliability.
 
-If elephant confirmed:
+Step 6: Local Alert Activation
 
-Local buzzer / light deterrent activates.
+After confirming the presence of an elephant, the system immediately activates local warning devices such as:
 
-Long-Range Communication (LoRaWAN)
+High-decibel buzzer
+Flashing LED light
 
-Node sends alert using LoRaWAN.
+These alerts help discourage elephants from approaching nearby villages or farmland.
 
-Signal travels:
+Step 7: Long-Range Alert Transmission
 
-Node → LoRa Gateway → Forest Control Center
+The confirmed alert is transmitted through the LoRaWAN communication module.
 
-Advantages:
+Communication flow:
 
-Works 5–15 km range
+Detection Node
+      │
+      ▼
+LoRaWAN Transmitter
+      │
+      ▼
+LoRa Gateway
+      │
+      ▼
+Forest Control Center
 
-No mobile network required
+The alert contains:
 
-Ultra-low power
+Detection status
+Date and time
+Node ID
+Detection confidence
+GPS location (if available)
 
-Solar Power Working
+LoRaWAN provides:
 
-Each unit uses:
+Communication range of approximately 5–15 km
+Low power consumption
+Operation without a mobile network
+Step 8: Event Logging
 
-100W Solar panel
+Each detection event is stored locally for future analysis.
 
-LiFePO4 battery
+The log includes:
 
-Daytime → charging
-Nighttime → battery supply
+Date
+Time
+Detection confidence
+Image filename
+Alert status
 
-System runs fully autonomous.
+This information can be used to analyze elephant movement patterns and improve the system over time.
+
+Step 9: Power Management
+
+The entire system is powered using renewable energy.
+
+Components:
+
+100 W Solar Panel
+LiFePO₄ Battery
+Solar Charge Controller
+
+Working:
+
+Daytime: Solar panel powers the system and charges the battery.
+Nighttime: The battery supplies uninterrupted power to the monitoring unit.
+
+This allows the system to operate continuously in remote forest locations without external power.
+
+Step 10: System Reset and Continuous Monitoring
+
+After sending the alert and storing the event:
+
+The camera stops recording.
+The buzzer turns off after a predefined duration.
+The system returns to low-power monitoring mode.
+
+This cycle repeats continuously, ensuring 24×7 autonomous monitoring.
