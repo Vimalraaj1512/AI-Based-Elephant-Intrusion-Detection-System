@@ -1,34 +1,37 @@
-Chhattisgarh Forest Area Planning
+# Chhattisgarh Forest Deployment Strategy
 
-Chhattisgarh has very large forest coverage.
+## Deployment Planning
 
-Total forest area ≈ 59,772 sq km
+Chhattisgarh has one of the largest forest covers in India, with approximately **59,772 sq. km** of forest area, accounting for nearly **44% of the state's geographical area**. Due to the vast size of the forest, deploying monitoring devices across the entire region is neither practical nor cost-effective.
 
-Around 44% of the state is forest land
+Instead of full-area coverage, the proposed system follows a **strategic deployment approach** by installing monitoring nodes only in high-risk locations where elephant movement is most frequent.
 
-Because the area is huge, you cannot place devices everywhere.
+## Suggested Monitoring Locations
 
-Realistic deployment strategy:
+Monitoring nodes should be installed near:
 
-Suggested Monitoring Layout
+* Elephant migration corridors
+* Forest–village boundaries
+* Forest entry and exit routes
+* Agricultural fields prone to elephant intrusion
+* Water sources frequently visited by elephants
 
-Instead of full coverage:
+This targeted deployment ensures maximum monitoring efficiency while significantly reducing installation and maintenance costs.
 
-Install nodes near:
+## Monitoring Coverage
 
-Elephant corridors
+Each AI monitoring node is designed to cover an area of approximately **1–2 km radius**, depending on terrain, vegetation density, and camera visibility.
 
-Village borders
+### Pilot Deployment Plan
 
-Forest entry paths
+For an initial pilot implementation, each forest division can be equipped with **20–30 monitoring nodes**, strategically placed at identified elephant movement hotspots.
 
-Crop edges
+## Advantages of Strategic Deployment
 
-Example concept:
+* Reduces hardware and installation costs
+* Covers high-risk zones effectively
+* Enables scalable expansion in future phases
+* Simplifies maintenance and monitoring
+* Improves early detection and response to elephant intrusion
 
-1 node covers ≈ 1–2 km radius
-
-For pilot deployment:
-20–30 nodes per forest division
-
-This sounds professional to judges and GitHub readers.
+This deployment strategy provides a practical, cost-effective, and scalable solution for protecting villages and agricultural lands while supporting forest authorities in monitoring elephant movement across Chhattisgarh's forest regions.
