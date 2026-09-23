@@ -18,7 +18,7 @@ This pull request reduces the overall hardware cost of the AI-Based Elephant Int
 
 | Component | Previous Cost | New Cost |
 |-----------|--------------:|---------:|
-| Raspberry Pi | ₹6,000 | ₹3,500 |
+| Orange Pi Zero 3 | ₹6,000 | ₹2,500 |
 | Camera | ₹2,000 | ₹700 |
 | GSM Module | ₹1,200 | ₹500 |
 | Display | ₹3,500 | ₹250 |
